@@ -1,0 +1,13 @@
+.contentContainer {
+  padding: 20px;
+  background-color: #f8fafc;
+  min-height: calc(100vh - 64px);
+  border-radius: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .contentContainer {
+    padding: 16px 8px;
+  }
+}

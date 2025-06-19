@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+.loginWrapper {
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.leftPanel {
+  flex: 4; /* 40% of the total width (2/5) */
+  max-width: 40%;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.rightPanel {
+  flex: 6; /* 60% of the total width (3/5) */
+  max-width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8fafc;
+  padding: 40px;
+}
+
+.loginContainer {
+  width: 100%;
+  max-width: 500px;
+}
+
+.loginBox {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.logoContainer {
+  margin-bottom: 32px;
+  text-align: center;
+  display: none; /* Hide on desktop, show on mobile */
+}
+
+.logoText {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.logoTextMobile {
+  display: none; /* Hide by default */
+  font-size: 28px;
+  color: #4f46e5;
+  margin: 0 0 32px 0;
+}
+
+/* Mobile styles */
+@media (max-width: 900px) {
+  .loginWrapper {
+    flex-direction: column;
+  }
+  
+  .leftPanel {
+    padding: 20px;
+    min-height: 150px;
+  }
+  
+  .rightPanel {
+    padding: 40px 20px;
+  }
+  
+  .logoText {
+    display: none;
+  }
+  
+  .logoContainer {
+    display: block;
+  }
+  
+  .logoTextMobile {
+    display: block;
+  }
+}
+
+.welcomeText {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+
+.subtitle {
+  color: #64748b;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.inputContainer {
+  position: relative;
+  margin-bottom: 20px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e2e8f0;
+}
+
+.inputIcon {
+  color: #94a3b8;
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.textField {
+  flex: 1;
+  padding: 12px 0;
+}
+
+.textField input {
+  padding: 0;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.visibilityButton {
+  color: #94a3b8;
+  padding: 4px;
+}
+
+.forgotPasswordContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 8px 0 24px;
+  font-size: 14px;
+}
+
+.forgotPassword {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: right;
+  display: block;
+  width: 100%;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
+
+.submitButton {
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 500;
+  text-transform: none;
+  font-size: 14px;
+  margin-bottom: 24px;
+  transition: background-color 0.2s;
+}
+
+.submitButton:hover {
+  background-color: #333333;
+}
+
+.signupLink {
+  text-align: center;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.signupLinkText {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signupLinkText:hover {
+  text-decoration: underline;
+}
+
+.loginHeader {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.title {
+  margin: 0 0 8px 0;
+  color: #1e293b;
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+.subtitle {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.form {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.socialAuth {
+  width: 100%;
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.socialButton {
+  padding: 10px;
+  border-radius: 8px;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+  transition: all 0.2s ease;
+  border: 1px solid #e2e8f0;
+  color: #1e293b;
+  background-color: white;
+}
+
+.socialButton:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.socialButton .MuiButton-startIcon {
+  margin-right: 8px;
+  margin-left: 4px;
+}
+
+.appleButton .MuiButton-startIcon {
+  color: #000000;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.divider span {
+  padding: 0 12px;
+}
+
+.textField {
+  margin: 12px 0;
+  background-color: #f8fafc;
+  border-radius: 8px;
+}
+
+.textField .MuiOutlinedInput-root {
+  border-radius: 8px;
+}
+
+.textField .MuiOutlinedInput-notchedOutline {
+  border-color: #e2e8f0;
+}
+
+.textField .Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #67676b;
+  border-width: 1px;
+}
+
+.textField .MuiInputLabel-root.Mui-focused {
+  color: #535355;
+}
+
+.rememberForgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0 24px;
+}
+
+.rememberMe {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.forgotPassword {
+  color: #4f46e5;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
+
+.submitButton {
+  margin: 8px 0;
+  padding: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.2), 0 2px 4px -1px rgba(79, 70, 229, 0.1);
+  transition: all 0.3s ease;
+}
+
+.submitButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.2), 0 4px 6px -2px rgba(79, 70, 229, 0.1);
+}
+
+.signupLink {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.signupText {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.signupLinkText {
+  color: #4f46e5;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.signupLinkText:hover {
+  text-decoration: underline;
+}
+
+.visibilityButton {
+  color: #94a3b8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .loginContainer {
+    flex-direction: column;
+  }
+  
+  .leftPanel {
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .heroText {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .rightPanel {
+    padding: 40px 20px;
+  }
+  
+  .loginPaper {
+    padding: 32px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rememberForgot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .forgotPassword {
+    margin-left: 0;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .loginPaper {
+    padding: 24px;
+  }
+  
+  .loginHeader {
+    margin-bottom: 24px;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+  }
+}
