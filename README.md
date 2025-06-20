@@ -37,9 +37,8 @@ A comprehensive and responsive dashboard application built with React and Materi
 - **Icons**: Material Icons (direct default imports)
 - **Build Tool**: Create React App
 
----
 
-## 🚀 Features
+## 🧰 Features
 
 - **Modern UI**: Material-UI v5 with custom theming
 - **State Management**: React Context API
@@ -55,6 +54,15 @@ A comprehensive and responsive dashboard application built with React and Materi
 - **Responsive Layout**: Optimized for all screen sizes
 - **Interactive Elements**: Hover effects and smooth transitions
 - **Consistent Styling**: Themed components for visual harmony
+
+---
+## ⚓ Login Page Information for Modern React Dashboard Application
+On the login page of this application, you will find placeholder credentials for testing purposes.
+- **Email ID Placeholder**: johndeo@gmail.com
+- **Password Placeholder**: johndeo
+- **Important Note**: If these placeholder credentials do not allow you to sign in, please utilize the **Google Sign-in** or **Apple Sign-in** options provided on the page. These methods offer a robust and secure way to access the dashboard.
+
+We recommend using the Google or Apple sign-in for a complete experience.
 
 ---
 
