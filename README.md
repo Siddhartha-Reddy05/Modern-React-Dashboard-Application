@@ -2,7 +2,7 @@
 
 A comprehensive and responsive dashboard application built with React and Material-UI, designed to provide a clean and intuitive user interface for managing various aspects of your business operations.
 
-## 📋 Features
+## 📋 Overview
 
 ### Dashboard
 - **Overview Metrics**: Key performance indicators with visual progress indicators
