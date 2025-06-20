@@ -1,4 +1,4 @@
-# Modern Dashboard Application
+# Modern React Dashboard Application
 
 A comprehensive and responsive dashboard application built with React and Material-UI, designed to provide a clean and intuitive user interface for managing various aspects of your business operations.
 
